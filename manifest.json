@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GoogleBackground",
+  "description": "Custom Background for Google",
+  "version": "1.0",
+  "icons": {
+    "16": "16logo.png",
+    "48": "48logo.png",
+    "128": "128logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "128": "128logo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "css": ["main.css"]
+    }
+  ]
+}
